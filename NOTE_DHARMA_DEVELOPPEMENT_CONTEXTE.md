@@ -1,277 +1,450 @@
-# Note de contexte — dharma-developpement.fr
+# Note de contexte — Dharma Développement
 
-Date : 24/05/2026  
+Date de consolidation : 24/05/2026  
 Dépôt : `cberthou-blip/dharma-developpement`  
-Domaine principal : `dharma-developpement.fr`
+Domaine principal : `dharma-developpement.fr`  
+Statut : note interne de cadrage, non destinée à être publiée telle quelle.
 
-## 1. Objet
+## 1. Définition corrigée
 
-Cette note consolide le contexte utile autour de **Dharma Développement / Dharma Dev** pour servir de base au futur site, aux offres et aux SaaS rattachés.
+**Dharma Développement** est le nom commercial de l’entreprise individuelle de Charles Berthou pour une activité de **développement de solutions numériques**.
 
-Sources utilisées :
+Le périmètre couvre notamment :
 
-- mémoire projet ;
-- échanges récents ;
-- Gmail, uniquement pour confirmer le domaine, Gandi et Stripe ;
-- GitHub, pour identifier le dépôt.
+- applications web ;
+- logiciels ;
+- sites internet ;
+- SaaS ;
+- outils métier ;
+- automatisations ;
+- formulaires intelligents ;
+- workflows ;
+- outils IA ;
+- interfaces d’administration ;
+- solutions de productivité pour petites structures.
 
-Aucun secret, token, clé API ou identifiant sensible n’est volontairement stocké ici.
+Dharma Développement ne doit donc pas être réduit à l’IA. L’IA est un axe fort, mais l’activité globale est plus large : **concevoir, développer et exploiter des solutions numériques utiles**.
 
-## 2. Identité commerciale
+## 2. Noms et usages
 
-- L’entreprise individuelle dispose d’un SIREN.
-- Le nom commercial envisagé / utilisé est **Dharma Développement**.
-- Variante courte déjà utilisée : **Dharma Dev**.
-- Le domaine principal est **dharma-developpement.fr**.
-- Le domaine a été confirmé comme créé chez **Gandi**.
-- L’organisation Gandi mentionne **Dharma Dev**.
+- Nom commercial long : **Dharma Développement**.
+- Nom court / usage technique / Stripe / Gandi : **Dharma Dev**.
+- Domaine principal : **dharma-developpement.fr**.
+- Domaine complémentaire à envisager : **dharmadeveloppement.fr**, en redirection ou protection.
+- Logique de marque : une structure chapeau capable de porter plusieurs produits, services et SaaS.
 
-Positionnement général : structure commerciale chapeau pour des services, outils IA, automatisations et SaaS.
+Règle de wording :
 
-## 3. Stripe et paiements
+> Utiliser **Dharma Développement** dans les contextes publics, légaux, institutionnels ou commerciaux. Utiliser **Dharma Dev** pour les usages courts, internes, techniques ou de facturation lorsque le support l’impose.
 
-Contexte confirmé par Gmail :
+## 3. Données confirmées par Gmail
 
-- un compte Stripe **Dharma dev** est actif en production ;
-- Stripe confirme la possibilité d’accepter des paiements réels ;
-- un premier paiement réel a été reçu ;
-- le compte Stripe est pensé comme compte unique pour plusieurs SaaS.
+### Domaine
 
-Règles :
+- Registrar : **Gandi**.
+- Domaine confirmé : `dharma-developpement.fr`.
+- Date de création confirmée : **23/05/2026**.
+- Durée initiale : **1 an**.
+- Organisation Gandi : **Dharma Dev**.
+- Facture Gandi : payée.
+- Montant domaine : **6,00 € HT / 7,20 € TTC**.
 
-- ne pas créer un compte Stripe par SaaS sans décision explicite ;
-- ne pas stocker de clé Stripe dans Git ;
+Note : la facture contient des données personnelles de facturation. Elles ne sont pas reproduites ici.
+
+### Stripe
+
+- Compte Stripe actif sous l’intitulé **Dharma dev**.
+- Stripe confirme que le compte peut accepter les paiements réels.
+- Un premier paiement réel a été confirmé.
+- Montant du premier paiement : **8,90 €**.
+- Type : création d’abonnement.
+- Conclusion : Dharma Dev est opérationnel comme support de paiement pour les produits numériques.
+
+Règles permanentes :
+
+- ne pas stocker de clé Stripe ;
 - ne pas stocker de webhook secret ;
-- ne pas exposer de détail de paiement client dans le dépôt.
+- ne pas dupliquer le compte Stripe par SaaS sans décision explicite ;
+- ne pas exposer de données client ou d’identifiants techniques dans Git.
 
-## 4. Rôle prévu de dharma-developpement.fr
+## 4. Données confirmées par GitHub
 
-Le site doit devenir le socle commercial des activités numériques et IA.
+Dépôt principal créé :
 
-Rôles possibles :
+- `cberthou-blip/dharma-developpement`
+- visibilité : privé ;
+- branche par défaut : `main` ;
+- dépôt initialement vide, initialisé par cette note.
 
-1. site vitrine de Dharma Développement ;
-2. point d’entrée commercial pour les SaaS ;
-3. page de confiance pour les paiements Stripe ;
-4. présentation des offres IA, automatisation et gouvernance légère ;
-5. support de crédibilité pour TPE, PME, indépendants et dirigeants.
+Autres dépôts liés à l’écosystème numérique de Charles :
 
-Le site doit rester sobre, clair, sérieux et orienté conversion.
+- `cberthou-blip/charlesberthou.fr` : site personnel et hub d’outils IA ;
+- `cberthou-blip/CoPierre` : SaaS de gestion SCI / biens / AG / PV / finances ;
+- `cberthou-blip/monregistreia` : SaaS registre IA / conformité / pilotage ;
+- `cberthou-blip/kleo-app` : application éducative / enfants ;
+- `cberthou-blip/chandleros` : assistant personnel / automatisation / Telegram / Codex ;
+- `cberthou-blip/labola` : autre projet web ;
+- `cberthou-blip/coeurdefrance` : autre projet web.
 
-## 5. Positionnement stratégique
+Ces dépôts ne doivent pas tous être affichés publiquement. Ils servent surtout de corpus projet et de références techniques internes.
 
-Dharma Développement doit aider les entreprises à :
+## 5. Positionnement central
 
-- identifier des cas d’usage IA utiles ;
-- structurer leurs pratiques IA ;
-- automatiser des tâches simples mais coûteuses ;
-- mettre en place des outils web sobres ;
-- formaliser une gouvernance légère ;
-- produire des documents, registres, synthèses ou workflows exploitables.
+Dharma Développement doit être positionné comme une activité de **conception et développement de solutions numériques pragmatiques**.
 
 Formulation cible :
 
-> Dharma Développement conçoit des outils simples pour aider les entreprises à structurer, automatiser et piloter leurs usages numériques et IA.
+> Dharma Développement conçoit des applications, logiciels, sites web et outils numériques pour aider les petites structures à gagner du temps, structurer leur activité et automatiser leurs tâches.
 
-À éviter : une posture vague d’« agence IA ».
+Version plus orientée IA :
 
-## 6. Principes commerciaux
+> Dharma Développement crée des solutions numériques et IA simples pour aider les entreprises à structurer, automatiser et piloter leur activité.
 
-- Viser un vrai business, pas une collection d’outils gratuits.
-- Privilégier des SaaS payants dès la V1 quand le produit s’y prête.
-- Ne pas trop mettre en avant le mot “gratuit”.
-- Préférer : essai, bêta privée, accès limité, offre payante, compte précréé.
-- Ne pas inciter artificiellement à “prendre un accès”.
-- Afficher clairement les fonctionnalités réservées aux offres payantes, sans ton agressif.
-- Faire une passe “premium +20 %” sur les interfaces SaaS avant ouverture publique.
+Version très courte :
 
-## 7. Projets liés
+> Applications, logiciels, sites web et outils IA pour les petites entreprises.
 
-### Dharma Pilot
+## 6. Ce que Dharma Développement n’est pas
 
-Contexte mémoire :
+Dharma Développement ne doit pas être présenté comme :
 
-- outil B2B de pilotage de l’adoption IA par métier ;
-- cible : dirigeants PME/ETI, DRH, DSI, transformation, conformité, formation ;
-- produit cœur vendable seul ;
-- extensions envisagées : Adoption et Learning ;
-- fonctionnement historique : mode invité et stockage local ;
-- vitrine publique séparée de l’application ;
-- projet local connu : `C:\Users\cbert\Documents\Dev\dharma` ;
-- Firebase historique : `adoptia-842d9` ;
-- version fiable connue : V1.0 vendable.
+- une simple agence IA ;
+- un blog personnel ;
+- une vitrine de veille tech ;
+- un cabinet de conseil abstrait ;
+- un fournisseur de promesses vagues ;
+- une holding de SaaS sans offre claire.
 
-Fonctions connues :
+L’identité doit rester concrète : **je construis des solutions numériques utiles**.
 
-- cartographie métiers ;
-- bibliothèque d’usages IA ;
-- registre IA ;
-- calculateur de gains ;
-- diagnostic de maturité ;
-- plan d’action 90 jours ;
-- restitution dirigeant.
+## 7. Cibles prioritaires
 
-Attention : `dharma-developpement.fr` ne doit pas être un simple duplicat de Dharma Pilot. Le site doit porter la marque commerciale globale.
+Cibles naturelles :
 
-### Mon Registre IA
+- TPE ;
+- PME ;
+- indépendants ;
+- professions libérales ;
+- SCI ;
+- petites structures administratives ;
+- dirigeants qui veulent un outil simple sans projet informatique lourd ;
+- équipes qui veulent automatiser des tâches répétitives ;
+- structures qui veulent formaliser leurs usages IA.
 
-- SaaS orienté registre, conformité et pilotage des usages IA.
-- Projet en phase de sécurisation / qualification / bêta privée.
-- Logique commerciale : payant, pas gratuit par défaut.
-- Peut être porté commercialement par Dharma Dev.
+Cibles secondaires :
 
-### CoPierre
-
-- SaaS autour de la gestion SCI, biens, AG, PV et finances.
-- Projet avancé : Stripe, sécurité, QA, production, onboarding, UI/UX.
-- Sert de modèle de processus SaaS pour les prochains produits.
-
-### charlesberthou.fr
-
-- Site personnel déjà recentré autour d’un hub d’outils IA.
-- Plusieurs outils et pages IA existent déjà.
-- Dharma Développement doit être plus commercial, plus clair et moins personnel.
+- associations ;
+- petites collectivités ;
+- réseaux locaux ;
+- porteurs de projets qui veulent une première version d’outil.
 
 ## 8. Offres possibles
 
-### Diagnostic IA PME
+### 8.1 Développement d’application métier
 
-- analyse de maturité ;
-- cas d’usage prioritaires ;
-- plan d’action 30 / 60 / 90 jours.
+Livrables possibles :
 
-### Registre IA léger
-
-- usages IA ;
-- niveau de risque ;
-- responsable ;
-- données manipulées ;
-- preuves et règles internes.
-
-### Automatisation simple
-
-- formulaire intelligent ;
-- génération de document ;
-- workflow email ;
-- export PDF / CSV ;
-- mini-dashboard.
-
-### Mini SaaS métier
-
-- outil web spécialisé ;
-- paiement Stripe ;
+- application web simple ;
+- espace utilisateur ;
+- tableau de bord ;
+- base de données ;
+- formulaires ;
+- génération de documents ;
+- exports PDF / CSV ;
+- emails transactionnels ;
 - authentification ;
+- paiement si besoin.
+
+### 8.2 Création de mini-SaaS
+
+Livrables possibles :
+
+- MVP SaaS ;
+- landing page ;
+- offre tarifaire ;
+- Stripe ;
+- onboarding ;
 - espace client ;
-- documentation et support minimal.
+- système d’abonnement ;
+- pages légales ;
+- mise en production ;
+- QA et sécurité de base.
 
-## 9. Cibles prioritaires
+### 8.3 Site web utile
 
-- dirigeants de TPE / PME ;
-- indépendants ;
-- professions libérales ;
-- SCI et gestion patrimoniale ;
-- responsables administratifs ;
-- structures qui veulent formaliser sans complexifier.
+Différenciation : ne pas vendre seulement un site vitrine, mais un site utile.
 
-Éviter une cible trop large du type “toutes les entreprises intéressées par l’IA”.
+Exemples :
 
-## 10. Ton public recommandé
+- site vitrine avec formulaire qualifiant ;
+- page de vente ;
+- espace ressources ;
+- outil intégré ;
+- simulateur ;
+- génération de devis ;
+- prise de contact structurée.
+
+### 8.4 Automatisation
+
+Exemples :
+
+- traitement automatique de demandes ;
+- génération de mails ;
+- synthèse de documents ;
+- suivi de tâches ;
+- notifications ;
+- connexion entre formulaires, emails, documents et tableaux de suivi.
+
+### 8.5 Outils IA et gouvernance IA
+
+Exemples :
+
+- diagnostic IA ;
+- registre IA ;
+- bibliothèque de cas d’usage ;
+- assistant interne ;
+- outil de priorisation ;
+- formation ou acculturation simple ;
+- cadre d’usage pour PME.
+
+## 9. Produits et projets rattachables
+
+### CoPierre
+
+- SaaS de gestion SCI / immobilier familial.
+- Fonctions : biens, finances, associés, AG, PV, documents, abonnement.
+- Projet avancé avec onboarding, Stripe, sécurité, QA, production.
+- Peut être présenté comme une application éditée par Dharma Développement.
+- Mention recommandée : “CoPierre est une application éditée par Dharma Développement”.
+- Cette mention doit rester discrète : footer, tarifs, confiance, abonnement, mentions légales.
+
+### Mon Registre IA
+
+- SaaS de registre IA, conformité et pilotage des usages IA.
+- Projet en sécurisation / qualification bêta.
+- Logique commerciale : payant, pas gratuit par défaut.
+- Peut être édité / porté par Dharma Développement.
+
+### Dharma Pilot
+
+- Projet historique de suite B2B pour adoption IA.
+- Produit cœur : Dharma Pilot.
+- Extensions prévues : Dharma Adoption, Dharma Learning.
+- Cible : dirigeants PME/ETI, DRH, DSI, transformation, conformité, formation.
+- V1 historique : mode invité, stockage local, Firebase préparé.
+- Statut : produit intéressant, mais ne doit pas définir seul l’identité de Dharma Développement.
+
+### charlesberthou.fr
+
+- Site personnel.
+- Hub d’outils IA et contenus.
+- Peut servir de laboratoire, portfolio ou source d’idées.
+- Ne doit pas se confondre avec Dharma Développement.
+
+### ChandlerOS
+
+- Assistant personnel / Telegram / Codex / automatisation.
+- Projet non nécessairement commercial à court terme.
+- Peut démontrer une capacité à concevoir des agents, connecteurs et automatisations complexes.
+
+### Kleo
+
+- Application orientée enfants / éducation.
+- Peut être une référence produit, mais à qualifier avant affichage public.
+
+## 10. Processus personnel de création SaaS déjà dégagé
+
+Processus issu des projets CoPierre et Mon Registre IA :
+
+1. idée et douleur client ;
+2. cadrage marché / cible / promesse ;
+3. architecture produit ;
+4. design UX/UI ;
+5. build MVP ;
+6. authentification et données ;
+7. emails et support ;
+8. paiement / abonnement ;
+9. sécurité / règles / secrets ;
+10. QA agents / tests / production.
+
+Ce processus peut devenir un argument commercial : Dharma Développement sait transformer une idée en produit exploitable.
+
+## 11. Ton public recommandé
+
+Style :
 
 - français de France ;
-- sobre ;
+- simple ;
 - direct ;
-- sérieux ;
-- concret ;
+- sobre ;
+- professionnel ;
 - orienté problème client ;
-- peu de jargon ;
 - phrases courtes ;
-- bénéfices visibles rapidement.
+- bénéfices concrets ;
+- peu de jargon.
 
 À éviter :
 
+- “révolutionner votre business” ;
+- “agence IA nouvelle génération” ;
+- “solution magique” ;
 - promesses excessives ;
-- discours trop startup ;
+- ton startup trop creux ;
 - références bancaires internes ;
 - contenu trop personnel ;
-- vocabulaire technique visible ;
-- mentions du type “projet interne”, “V0.9”, “Firebase non configuré”, “Stripe à connecter”.
+- détails techniques visibles.
 
-## 11. Pages probables du site
+## 12. Messages commerciaux possibles
 
-V1 simple :
+### Message principal
+
+> Je développe des applications, logiciels, sites web et automatisations pour transformer une idée métier en solution numérique simple et exploitable.
+
+### Message PME
+
+> Dharma Développement aide les petites entreprises à créer des outils numériques utiles : formulaires, tableaux de bord, automatisations, logiciels internes et SaaS métier.
+
+### Message IA
+
+> J’intègre l’IA quand elle apporte un vrai gain : synthèse, aide à la décision, génération de documents, priorisation, automatisation ou pilotage.
+
+### Message sobre
+
+> Des solutions numériques simples, construites pour résoudre un vrai problème métier.
+
+## 13. Pages probables du site
+
+V1 recommandée :
 
 1. Accueil ;
 2. Services ;
-3. Outils / SaaS ;
-4. Cas d’usage ;
-5. À propos ;
-6. Contact ;
-7. Mentions légales ;
-8. Confidentialité ;
-9. CGV si vente directe.
+3. Applications & logiciels ;
+4. Sites web utiles ;
+5. Automatisations & IA ;
+6. Réalisations / produits ;
+7. À propos ;
+8. Contact ;
+9. Mentions légales ;
+10. Confidentialité ;
+11. CGV si vente directe.
 
-## 12. Message d’accueil possible
+Version minimaliste possible :
 
-Titre :
+1. Accueil ;
+2. Services ;
+3. Produits ;
+4. Contact ;
+5. Légal.
 
-> Des outils simples pour piloter vos projets numériques et IA
+## 14. Structure d’accueil recommandée
 
-Sous-titre :
+1. Hero : promesse claire.
+2. Problèmes clients : tâches manuelles, outils dispersés, besoin de logiciel simple.
+3. Services : application, site utile, automatisation, IA.
+4. Produits / réalisations : CoPierre, Mon Registre IA, autres si prêts.
+5. Méthode : cadrer, construire, sécuriser, mettre en ligne.
+6. Confiance : sécurité, sobriété, accompagnement.
+7. Contact.
 
-> Dharma Développement aide les petites entreprises à structurer leurs usages IA, automatiser leurs tâches répétitives et créer des outils web utiles, sans complexité inutile.
+## 15. Formulations de hero possibles
 
-CTA principal :
+### Option 1
 
-> Présenter mon besoin
+> Applications, logiciels et sites web pour transformer vos idées en outils concrets.
 
-CTA secondaire :
+### Option 2
 
-> Voir les outils
+> Des solutions numériques simples pour gagner du temps et structurer votre activité.
 
-## 13. Architecture à prévoir
+### Option 3
 
-À cadrer avant développement :
+> Je conçois des outils web, logiciels et automatisations utiles aux petites entreprises.
 
-- hébergement ;
+### Option 4
+
+> Du besoin métier à l’application prête à l’emploi.
+
+## 16. Liens avec CoPierre
+
+Décision mémoire : CoPierre peut afficher une mention discrète :
+
+> CoPierre est une application éditée par Dharma Développement.
+
+Emplacements possibles :
+
+- footer public ;
+- page tarifs ;
+- section confiance ;
+- page abonnement ;
+- mentions légales.
+
+Ne pas alourdir le wording commercial de CoPierre. La marque produit doit rester prioritaire.
+
+## 17. Infrastructure à prévoir
+
+À cadrer :
+
+- hébergement du site ;
 - DNS Gandi ;
 - redirection `www` ;
 - email de contact ;
 - formulaire fiable ;
-- pages légales ;
-- relation exacte avec les SaaS existants ;
-- nom affiché sur les factures ;
+- emails transactionnels si besoin ;
 - analytics sobres ;
-- politique de support.
+- pages légales ;
+- CGV ;
+- politique de confidentialité ;
+- relation entre site vitrine et produits SaaS ;
+- stratégie multi-domaines ;
+- nom exact affiché sur les factures.
 
-## 14. Sécurité et conformité
+## 18. Sécurité et conformité
 
 Règles permanentes :
 
 - aucun secret dans Git ;
-- pas de clé Stripe dans le front ;
-- pas de token Firebase, Resend ou Gandi dans le dépôt ;
+- aucune clé API publique dans le front ;
+- aucune clé Stripe dans le dépôt ;
+- aucun token Gandi, Resend, Firebase ou équivalent dans le dépôt ;
 - séparer notes internes et contenu public ;
-- prévoir mentions légales, confidentialité et CGV ;
-- vérifier le statut exact EI / nom commercial / SIREN avant publication.
+- vérifier SIREN, identité légale, mentions légales et CGV avant publication ;
+- ne pas publier d’adresse personnelle sans décision explicite ;
+- ne pas exposer les projets internes non prêts.
 
-## 15. Décision de départ recommandée
+## 19. Décision de positionnement recommandée
 
-Construire `dharma-developpement.fr` comme **site commercial chapeau**, non comme duplicat de Dharma Pilot.
+Positionner Dharma Développement comme :
 
-Priorité V1 :
+> une activité de développement de solutions numériques pour petites entreprises, avec une spécialité forte sur les SaaS, automatisations et outils IA.
 
-1. crédibiliser Dharma Développement ;
-2. expliquer l’offre en moins de 10 secondes ;
-3. orienter vers contact ou outils ;
-4. préparer Stripe et les pages légales ;
-5. servir de base commune aux SaaS actuels et futurs.
+Ce positionnement est plus juste que :
 
-## 16. Prochaine action logique
+- “agence IA” ;
+- “éditeur de SaaS uniquement” ;
+- “freelance web classique” ;
+- “cabinet de conseil IA”.
 
-Créer ensuite un prompt Codex pour :
+## 20. Priorité V1 du site
 
-1. initialiser proprement le projet web ;
-2. proposer une architecture simple ;
-3. créer la première version du site ;
-4. connecter progressivement DNS, email, formulaire et pages légales ;
-5. ne rien casser côté SaaS existants.
+Objectifs :
+
+1. clarifier l’activité ;
+2. crédibiliser Dharma Développement ;
+3. montrer que vous savez construire des produits numériques ;
+4. présenter 3 ou 4 offres simples ;
+5. relier proprement CoPierre et Mon Registre IA si souhaité ;
+6. permettre une prise de contact claire ;
+7. préparer les obligations légales et Stripe.
+
+## 21. Prochaine action Codex recommandée
+
+Créer un prompt Codex dédié pour :
+
+1. initialiser le site `dharma-developpement.fr` ;
+2. produire une V1 sobre ;
+3. intégrer la vraie promesse “solutions numériques” ;
+4. éviter de réduire le site à l’IA ;
+5. prévoir les pages légales ;
+6. ne pas exposer de secrets ;
+7. ne pas casser les autres SaaS ;
+8. préparer une architecture réutilisable pour futurs produits.

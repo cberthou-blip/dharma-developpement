@@ -8,4 +8,5 @@ Site statique pour GitHub Pages.
 - `sitemap.xml` et `robots.txt` déclarent les URL publiques.
 - `assets/` contient le marqueur SVG et les images Open Graph.
 
-Le contact principal passe par le lien `mailto:` du site.
+Le contact principal passe par le formulaire Web3Forms de la page d'accueil.
+Pour l'activer, remplacer `REMPLACER_PAR_CLE_WEB3FORMS` dans `index.html` par la clé d'accès Web3Forms.

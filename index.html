@@ -37,7 +37,11 @@
         "@type": "Organization",
         "name": "Dharma Développement",
         "url": "https://dharma-developpement.fr",
-        "email": "contact@dharma-developpement.fr"
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "contact",
+          "url": "https://dharma-developpement.fr/#contact"
+        }
       }
     </script>
   </head>
@@ -301,15 +305,60 @@
           </div>
           <div class="contact-panel">
             <p>
-              Pour toute demande liée à Dharma Développement, utiliser le
-              contact dédié.
+              Pour toute demande liée à Dharma Développement, écrire depuis le
+              formulaire.
             </p>
-            <a
-              class="button button-primary"
-              href="mailto:contact@dharma-developpement.fr?subject=Contact%20Dharma%20D%C3%A9veloppement"
+            <form
+              class="contact-form"
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              data-contact-form
             >
-              Contacter
-            </a>
+              <!-- La clé Web3Forms est publique et ne révèle pas l'adresse de réception. -->
+              <input type="hidden" name="access_key" value="REMPLACER_PAR_CLE_WEB3FORMS" />
+              <input type="hidden" name="subject" value="Nouveau message depuis Dharma Développement" />
+              <input type="hidden" name="from_name" value="Dharma Développement" />
+              <input type="hidden" name="redirect" value="https://dharma-developpement.fr/#contact" />
+              <input
+                class="form-honeypot"
+                type="checkbox"
+                name="botcheck"
+                tabindex="-1"
+                autocomplete="off"
+              />
+
+              <div class="form-row">
+                <label for="contact-name">Nom</label>
+                <input
+                  id="contact-name"
+                  name="name"
+                  type="text"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+
+              <div class="form-row">
+                <label for="contact-email">Email</label>
+                <input
+                  id="contact-email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+
+              <div class="form-row">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="message" rows="6" required></textarea>
+              </div>
+
+              <div class="contact-actions">
+                <button class="button button-primary" type="submit">Envoyer</button>
+                <p class="form-status" data-form-status aria-live="polite"></p>
+              </div>
+            </form>
           </div>
         </div>
       </section>
@@ -325,10 +374,62 @@
           <a href="mentions-legales.html">Mentions légales</a>
           <a href="confidentialite.html">Confidentialité</a>
         </nav>
-        <a href="mailto:contact@dharma-developpement.fr?subject=Contact%20Dharma%20D%C3%A9veloppement">
-          Contact
-        </a>
+        <a href="#contact">Contact</a>
       </div>
     </footer>
+    <script>
+      (() => {
+        const form = document.querySelector("[data-contact-form]");
+        if (!form) return;
+
+        const status = form.querySelector("[data-form-status]");
+        const submitButton = form.querySelector('button[type="submit"]');
+        const defaultButtonText = submitButton.textContent;
+        const accessKey = form.elements.access_key.value;
+        const isConfigured = accessKey && !accessKey.includes("REMPLACER");
+
+        const setStatus = (message, state) => {
+          status.textContent = message;
+          status.dataset.state = state;
+        };
+
+        form.addEventListener("submit", async (event) => {
+          event.preventDefault();
+
+          if (!isConfigured) {
+            setStatus("Le formulaire doit encore être activé.", "error");
+            return;
+          }
+
+          submitButton.disabled = true;
+          submitButton.textContent = "Envoi...";
+          setStatus("", "");
+
+          try {
+            const response = await fetch(form.action, {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json"
+              },
+              body: JSON.stringify(Object.fromEntries(new FormData(form)))
+            });
+            const result = await response.json();
+
+            if (!response.ok || !result.success) {
+              throw new Error(result.message || "Erreur d'envoi.");
+            }
+
+            form.reset();
+            setStatus("Message envoyé. Merci, je reviens vers vous rapidement.", "success");
+          } catch (error) {
+            setStatus("L'envoi n'a pas abouti. Merci de réessayer dans un instant.", "error");
+          } finally {
+            submitButton.disabled = false;
+            submitButton.textContent = defaultButtonText;
+          }
+        });
+      })();
+    </script>
   </body>
 </html>

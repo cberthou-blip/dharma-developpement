@@ -296,10 +296,8 @@ p {
 .signal-board,
 .statement-panel,
 .module-card,
-.product-list article,
 .system-panel,
 .contact-panel,
-.ai-principles,
 .dark-instrument {
   border: 1px solid var(--line-strong);
   border-radius: 4px;
@@ -488,14 +486,6 @@ p {
   line-height: 1.55;
 }
 
-.cycle-note {
-  margin-top: 22px;
-  color: var(--black);
-  font-family: var(--font-mono);
-  font-size: 13px;
-  font-weight: 600;
-}
-
 .statement-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -505,7 +495,7 @@ p {
 }
 
 .statement-grid div {
-  min-height: 178px;
+  min-height: 112px;
   border-right: 1px solid var(--line);
   padding: 22px 22px 0 0;
 }
@@ -515,27 +505,12 @@ p {
   padding-right: 0;
 }
 
-.statement-grid strong,
-.ai-principles strong {
+.statement-grid strong {
   display: block;
   margin-top: 12px;
   font-family: var(--font-title);
   font-size: 22px;
   line-height: 1.1;
-}
-
-.statement-grid p,
-.ai-principles p {
-  margin-top: 12px;
-  color: var(--steel-dark);
-  font-size: 14px;
-}
-
-.ai-principles .principle-example {
-  color: var(--black-soft);
-  font-family: var(--font-mono);
-  font-size: 12px;
-  line-height: 1.5;
 }
 
 .section-topline {
@@ -559,7 +534,7 @@ p {
 
 .module-card {
   position: relative;
-  min-height: 266px;
+  min-height: 218px;
   background: rgba(251, 250, 246, 0.82);
   padding: 22px;
 }
@@ -604,41 +579,6 @@ p {
 
 .module-card h3 {
   margin-top: 12px;
-}
-
-.module-card p {
-  margin-top: 14px;
-  color: var(--steel-dark);
-  font-size: 15px;
-}
-
-.product-grid {
-  display: grid;
-  grid-template-columns: minmax(260px, 0.72fr) minmax(0, 1.28fr);
-  gap: 56px;
-  align-items: start;
-}
-
-.product-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
-}
-
-.product-list article {
-  min-height: 208px;
-  background: rgba(251, 250, 246, 0.82);
-  padding: 24px;
-}
-
-.product-list h3 {
-  margin-top: 18px;
-}
-
-.product-list p {
-  margin-top: 14px;
-  color: var(--steel-dark);
-  font-size: 15px;
 }
 
 .system-section {
@@ -816,8 +756,7 @@ p {
 
 .ai-grid {
   display: grid;
-  grid-template-columns: minmax(0, 0.88fr) minmax(320px, 0.92fr);
-  gap: 48px;
+  grid-template-columns: minmax(0, 0.72fr) minmax(320px, 1fr);
   align-items: start;
 }
 
@@ -829,22 +768,6 @@ p {
 .ai-copy p:not(.data-label) {
   max-width: 660px;
   font-size: 18px;
-}
-
-.ai-principles {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  background: rgba(251, 250, 246, 0.8);
-}
-
-.ai-principles div {
-  min-height: 212px;
-  border-right: 1px solid var(--line);
-  padding: 22px;
-}
-
-.ai-principles div:last-child {
-  border-right: 0;
 }
 
 .contact-section {
@@ -1008,7 +931,6 @@ p {
   .hero-grid,
   .section-grid,
   .section-topline,
-  .product-grid,
   .system-grid,
   .ai-grid,
   .contact-grid {
@@ -1136,14 +1058,11 @@ p {
 
   .statement-grid,
   .module-grid,
-  .product-list,
-  .ai-principles,
   .instrument-metrics {
     grid-template-columns: 1fr;
   }
 
   .statement-grid div,
-  .ai-principles div,
   .instrument-metrics div {
     border-right: 0;
     border-bottom: 1px solid var(--line);
@@ -1152,7 +1071,6 @@ p {
   }
 
   .statement-grid div:last-child,
-  .ai-principles div:last-child,
   .instrument-metrics div:last-child {
     border-bottom: 0;
   }

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Dharma Développement">
+  <rect width="64" height="64" fill="none"/>
+  <path d="M24 5h16l19 19v16L40 59H24L5 40V24L24 5Z" fill="none" stroke="#111214" stroke-width="4" stroke-linejoin="miter"/>
+  <path d="M26 13h12l13 13v12L38 51H26L13 38V26L26 13Z" fill="none" stroke="#111214" stroke-width="3" stroke-linejoin="miter"/>
+  <path d="M25 25h14v14H25z" fill="none" stroke="#111214" stroke-width="3"/>
+</svg>

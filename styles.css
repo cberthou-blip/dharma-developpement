@@ -5,10 +5,10 @@
   --black: #111214;
   --black-soft: #1a1b1d;
   --mineral: #8c8f94;
+  --mineral-dark: #6f7378;
+  --mineral-light: #a0a3a8;
   --steel: #5f6871;
   --steel-dark: #3f474f;
-  --ochre: #c89a3a;
-  --ochre-dark: #946f25;
   --line: rgba(17, 18, 20, 0.16);
   --line-strong: rgba(17, 18, 20, 0.34);
   --line-dark: rgba(244, 242, 236, 0.22);
@@ -53,7 +53,7 @@ a {
 
 a:focus-visible,
 button:focus-visible {
-  outline: 2px solid var(--ochre);
+  outline: 2px solid var(--mineral);
   outline-offset: 4px;
 }
 
@@ -152,10 +152,16 @@ strong {
   background: rgba(251, 250, 246, 0.74);
   cursor: pointer;
   list-style: none;
+  appearance: none;
 }
 
 .mobile-menu summary::-webkit-details-marker {
   display: none;
+}
+
+.mobile-menu summary::marker {
+  content: "";
+  font-size: 0;
 }
 
 .mobile-menu summary span {
@@ -190,6 +196,20 @@ strong {
   border-bottom: 0;
 }
 
+.mobile-menu nav a.mobile-contact {
+  margin: 8px;
+  border: 1px solid var(--mineral);
+  padding: 10px 12px;
+  background: var(--mineral);
+  color: var(--black);
+  text-align: center;
+}
+
+.mobile-menu nav a.mobile-contact:hover {
+  background: var(--mineral-light);
+  border-color: var(--mineral-dark);
+}
+
 .site-nav a,
 .nav-action,
 .site-footer a {
@@ -205,9 +225,20 @@ strong {
 }
 
 .nav-action {
+  min-height: 36px;
+  border: 1px solid var(--mineral);
+  border-radius: 4px;
+  padding: 8px 12px;
   color: var(--black);
   font-family: var(--font-mono);
   font-size: 12px;
+  font-weight: 600;
+}
+
+.nav-action:hover {
+  background: var(--mineral);
+  border-color: var(--mineral);
+  color: var(--black);
 }
 
 .hero {
@@ -299,13 +330,14 @@ p {
 }
 
 .button-primary {
-  border-color: var(--ochre-dark);
-  background: var(--ochre);
+  border-color: var(--mineral-dark);
+  background: var(--mineral);
   color: var(--black);
 }
 
 .button-primary:hover {
-  background: #d4a846;
+  background: var(--mineral-light);
+  border-color: var(--mineral-dark);
 }
 
 .button-secondary {
@@ -587,7 +619,7 @@ p {
 }
 
 .module-card-accent {
-  border-color: rgba(148, 111, 37, 0.65);
+  border-color: rgba(140, 143, 148, 0.72);
 }
 
 .module-icon {
@@ -911,6 +943,24 @@ p {
   flex-wrap: wrap;
   gap: 18px;
   align-items: center;
+}
+
+.footer-contact {
+  display: inline-flex;
+  min-height: 34px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--mineral);
+  border-radius: 4px;
+  padding: 7px 12px;
+  color: var(--ivory);
+  font-weight: 600;
+}
+
+.footer-contact:hover {
+  background: var(--mineral);
+  border-color: var(--mineral);
+  color: var(--black);
 }
 
 .footer-brand {

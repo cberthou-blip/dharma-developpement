@@ -1,7 +1,7 @@
 # Dharma Développement
 
 Dharma Développement désigne une activité d’édition, de développement et
-d’exploitation de produits numériques propres.
+d’exploitation de produits numériques.
 
 Synthèse de l’activité Dharma Développement :
 édition numérique, produits numériques, applications web, automatisation,

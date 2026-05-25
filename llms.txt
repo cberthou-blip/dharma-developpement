@@ -1,0 +1,16 @@
+# Dharma Développement
+
+Dharma Développement désigne une activité d’édition, de développement et
+d’exploitation de produits numériques propres.
+
+Le site présente le cadre général de l’activité Dharma Développement :
+édition numérique, produits numériques, applications web, automatisation,
+IA utile et développement logiciel.
+
+Pages publiques :
+- https://dharma-developpement.fr/
+- https://dharma-developpement.fr/mentions-legales.html
+- https://dharma-developpement.fr/confidentialite.html
+
+Contact :
+- contact@dharma-developpement.fr

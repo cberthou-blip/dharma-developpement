@@ -9,4 +9,4 @@ Site statique pour GitHub Pages.
 - `assets/` contient le marqueur SVG et les images Open Graph.
 
 Le contact principal passe par le formulaire Web3Forms de la page d'accueil.
-Pour l'activer, remplacer `REMPLACER_PAR_CLE_WEB3FORMS` dans `index.html` par la clé d'accès Web3Forms.
+La clé d'accès Web3Forms est configurée dans `index.html`.

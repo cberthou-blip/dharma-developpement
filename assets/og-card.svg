@@ -7,10 +7,10 @@
   <rect width="1200" height="630" fill="#f4f2ec"/>
   <rect width="1200" height="630" fill="url(#grid)"/>
   <path d="M58 86h780" stroke="#111214" stroke-opacity=".55" stroke-width="2"/>
-  <text x="58" y="72" fill="#111214" font-family="IBM Plex Mono, monospace" font-size="22" font-weight="600">SIREN 532 372 786</text>
+  <text x="58" y="72" fill="#111214" font-family="IBM Plex Mono, monospace" font-size="22" font-weight="600">PRODUITS NUMÉRIQUES PROPRIÉTAIRES</text>
   <text x="58" y="218" fill="#111214" font-family="Space Grotesk, Inter, sans-serif" font-size="88" font-weight="700">Dharma</text>
   <text x="58" y="306" fill="#111214" font-family="Space Grotesk, Inter, sans-serif" font-size="88" font-weight="700">Développement</text>
-  <text x="62" y="374" fill="#3f474f" font-family="Inter, sans-serif" font-size="30">Produits numériques, logiciels web, SaaS, automatisation et IA utile.</text>
+  <text x="62" y="374" fill="#3f474f" font-family="Inter, sans-serif" font-size="30">Web, logiciel, SaaS, automatisation et outils IA utiles.</text>
   <g transform="translate(908 92)">
     <path d="M80 0h72l80 80v72l-80 80H80L0 152V80L80 0Z" fill="none" stroke="#111214" stroke-width="10"/>
     <path d="M90 36h52l54 54v52l-54 54H90l-54-54V90l54-54Z" fill="none" stroke="#111214" stroke-width="7"/>

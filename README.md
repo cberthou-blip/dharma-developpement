@@ -1,11 +1,11 @@
 # Dharma Développement
 
-Site statique one-page pour GitHub Pages.
+Site statique pour GitHub Pages.
 
 - `index.html` contient la structure éditoriale.
 - `styles.css` contient l'identité visuelle et la mise en page responsive.
-- `assets/` contient le marqueur SVG et l'image Open Graph.
+- `mentions-legales.html` et `confidentialite.html` contiennent les pages légales.
+- `assets/` contient le marqueur SVG et les images Open Graph.
 
-Le site ne contient pas d'authentification, pas de paiement, pas de formulaire,
-pas de backend, pas de base de données et pas de secret. Le contact passe
-uniquement par `mailto:contact@dharma-developpement.fr`.
+Le contact principal passe par email :
+`mailto:contact@dharma-developpement.fr?subject=Contact%20Dharma%20D%C3%A9veloppement`.
